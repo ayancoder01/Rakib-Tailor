@@ -1,0 +1,595 @@
+/*
+ * Rakib Tailor – Responsive Stylesheet
+ * Adds mobile-first responsive overrides for all sections.
+ * Does NOT modify existing styles — only adds breakpoint rules.
+ */
+
+/* ========================================
+   TABLET (max-width: 1024px)
+   ======================================== */
+@media (max-width: 1024px) {
+
+    /* --- Global Layout --- */
+    .container,
+    .container-wide {
+        padding: 0 30px;
+    }
+
+    .section {
+        padding: 80px 0;
+    }
+
+    /* --- Minimal HUD Header --- */
+    .minimal-hud {
+        padding: 25px 30px;
+    }
+
+    /* --- Split Hero --- */
+    .split-hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .sh-left {
+        padding: 130px 30px 60px;
+        min-height: 60vh;
+    }
+
+    .sh-right {
+        height: 55vh;
+    }
+
+    .sh-img-frame {
+        position: relative;
+        height: 100%;
+    }
+
+    .sh-scroll-hint {
+        display: none;
+    }
+
+    /* --- Horizontal Process Scroll: convert to vertical cards on tablet --- */
+    .horizontal-scroll-section {
+        height: auto !important;
+    }
+
+    .horizontal-sticky {
+        position: relative !important;
+        height: auto !important;
+        overflow: visible !important;
+    }
+
+    .horizontal-wrapper {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        width: 100% !important;
+        height: auto !important;
+        transform: none !important;
+        will-change: auto !important;
+    }
+
+    .horizontal-item {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 280px !important;
+        padding: 60px 40px !important;
+    }
+
+    .h-content h2 {
+        font-size: 3rem;
+    }
+
+    .h-index {
+        font-size: 8rem;
+        top: -40px;
+        left: -30px;
+    }
+
+    /* --- Editorial Cards (Collections) --- */
+    .ec-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    /* --- Bios (Team) --- */
+    .bios-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    /* --- Star Voice (Testimonials) --- */
+    .sv-cards {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .sv-card--featured {
+        transform: none;
+    }
+
+    /* --- FAQ Editorial --- */
+    .faq-editorial-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    /* --- Featured Editorial cards --- */
+    .ec-card {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /* --- Editorial Pricing --- */
+    .editorial-pricing-section {
+        padding: 80px 0;
+    }
+
+    .pricing-spread {
+        padding: 0 20px;
+    }
+
+    /* --- Art Nav Menu --- */
+    .art-links a {
+        font-size: 3.5rem;
+    }
+
+    /* --- Signature Footer --- */
+    .sig-footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+}
+
+
+/* ========================================
+   MOBILE (max-width: 768px)
+   ======================================== */
+@media (max-width: 768px) {
+
+    /* --- Global Layout --- */
+    html {
+        font-size: 15px;
+    }
+
+    .container,
+    .container-wide {
+        padding: 0 20px;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    /* --- Minimal HUD Header --- */
+    .minimal-hud {
+        padding: 20px 20px;
+    }
+
+    .hud-logo {
+        font-size: 1.5rem;
+    }
+
+    /* --- Art Nav Overlay --- */
+    .art-nav {
+        padding-left: 5%;
+        padding-right: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    /* Keep close button above the full-height nav */
+    #menuCloseBtn,
+    .overlay-close {
+        z-index: 10;
+        position: fixed;
+        top: 28px;
+        right: 24px;
+    }
+
+    .art-links a {
+        font-size: 2.5rem;
+    }
+
+    .art-menu-footer {
+        position: static;
+        margin-top: 40px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        border-top-color: rgba(255, 255, 255, 0.08);
+        padding-top: 20px;
+    }
+
+    .nav-bg-text {
+        font-size: 30vw;
+    }
+
+    /* --- Split Hero --- */
+    .sh-left {
+        padding: 110px 20px 50px;
+    }
+
+    .sh-cta-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .sh-btn-primary {
+        width: 100%;
+        text-align: center;
+        padding: 16px 24px;
+    }
+
+    .sh-right {
+        height: 45vh;
+    }
+
+    /* --- Marquee --- */
+    .marquee-content span {
+        font-size: 0.95rem;
+    }
+
+    /* --- Atelier Intro --- */
+    .ai-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .ai-heading {
+        font-size: 3.5rem;
+    }
+
+    .ai-big-number {
+        font-size: 4rem;
+    }
+
+    .ai-lead {
+        font-size: 1.2rem;
+    }
+
+    /* --- Couture Numbers Panel --- */
+    .cn-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cn-item {
+        padding: 40px 25px;
+    }
+
+    .cn-value {
+        font-size: 3.5rem;
+    }
+
+    .cn-tagline {
+        grid-column: 1 / -1;
+        padding: 40px 25px;
+    }
+
+    .cn-tagline blockquote {
+        font-size: 1.3rem;
+    }
+
+    /* --- Editorial Cards (Collections) --- */
+    .ec-intro h2 {
+        font-size: 2.8rem;
+    }
+
+    .ec-list {
+        grid-template-columns: 1fr;
+    }
+
+    .ec-card {
+        flex-direction: column;
+    }
+
+    .ec-card-img {
+        aspect-ratio: 16/9;
+        overflow: hidden;
+    }
+
+    .ec-card-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* --- Horizontal Process (vertical stack on mobile) --- */
+    .horizontal-scroll-section {
+        height: auto !important;
+    }
+
+    .horizontal-sticky {
+        position: relative !important;
+        height: auto !important;
+        overflow: visible !important;
+    }
+
+    .horizontal-wrapper {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        height: auto !important;
+        transform: none !important;
+        will-change: auto !important;
+    }
+
+    .horizontal-item {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+        padding: 60px 20px 60px 20px !important;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+    }
+
+    .h-content {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .h-content h2 {
+        font-size: 2rem;
+        margin-bottom: 16px;
+    }
+
+    .h-content p {
+        font-size: 0.95rem;
+        opacity: 0.7;
+        line-height: 1.7;
+    }
+
+    .h-index {
+        position: absolute;
+        top: 20px;
+        left: 16px;
+        font-size: 5rem;
+        opacity: 0.06;
+        line-height: 1;
+    }
+
+    /* --- Heritage Section --- */
+    .hs-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hs-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .hs-pillars {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .hs-year-badge {
+        top: 15px;
+        right: 15px;
+        padding: 15px 20px;
+    }
+
+    /* --- FAQ Editorial --- */
+    .faq-editorial-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .faq-e-header h2 {
+        font-size: 2.5rem;
+    }
+
+    .faq-e-question h3 {
+        font-size: 0.9rem;
+    }
+
+    /* --- Editorial Pricing --- */
+    .p-header {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .p-line {
+        display: none;
+    }
+
+    .p-header h3 {
+        font-size: 1.8rem;
+    }
+
+    /* --- Bios (Team) --- */
+    .bios-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .bio-card--offset {
+        margin-top: 0 !important;
+    }
+
+    /* --- Star Voice (Testimonials) --- */
+    .sv-cards {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .sv-header h2 {
+        font-size: 2.8rem;
+    }
+
+    /* --- Contact Split --- */
+    .contact-split {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-visual {
+        height: 320px;
+    }
+
+    .contact-form-panel {
+        padding: 50px 20px;
+    }
+
+    .form-title {
+        font-size: 2.5rem;
+    }
+
+    .bespoke-form .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    /* --- Location Grid --- */
+    .loc-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .location-details {
+        padding: 50px 20px;
+    }
+
+    .location-map {
+        height: 40vh;
+    }
+
+    /* --- Signature Footer --- */
+    .sig-footer-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .sig-divider {
+        display: none;
+    }
+
+    .sig-bg-text {
+        display: none !important;
+    }
+
+    .sig-footer-top {
+        padding: 60px 0 40px;
+    }
+
+    .sig-footer-bottom .container {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    /* --- Back to top --- */
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 44px;
+        height: 44px;
+    }
+}
+
+
+/* ========================================
+   SMALL MOBILE (max-width: 480px)
+   ======================================== */
+@media (max-width: 480px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    .container,
+    .container-wide {
+        padding: 0 16px;
+    }
+
+    .section {
+        padding: 50px 0;
+    }
+
+    /* --- Split Hero --- */
+    .sh-left {
+        padding: 100px 16px 40px;
+    }
+
+    /* --- Couture Numbers Panel --- */
+    .cn-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cn-tagline {
+        grid-column: 1;
+    }
+
+    .cn-item {
+        padding: 30px 20px;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    /* --- Atelier Intro --- */
+    .ai-heading {
+        font-size: 2.8rem;
+    }
+
+    /* --- Heritage --- */
+    .hs-content h2 {
+        font-size: 2rem;
+    }
+
+    /* --- Art Nav Overlay --- */
+    .art-links a {
+        font-size: 1.9rem;
+    }
+
+    /* --- FAQ --- */
+    .faq-e-header h2 {
+        font-size: 2rem;
+    }
+
+    /* --- Contact form --- */
+    .form-title {
+        font-size: 2rem;
+    }
+
+    .contact-visual {
+        height: 250px;
+    }
+
+    /* --- Bios --- */
+    .bios-header h2 {
+        font-size: 2.2rem;
+    }
+
+    /* --- Star Voice --- */
+    .sv-header h2 {
+        font-size: 2.2rem;
+    }
+
+    .sv-card {
+        padding: 30px 20px;
+    }
+
+    /* --- Signature footer --- */
+    .sig-bg-text {
+        display: none !important;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        gap: 10px;
+        border-bottom: none;
+    }
+
+    .newsletter-form input {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .newsletter-form button {
+        padding: 10px 0;
+        text-align: left;
+    }
+}

@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakib Tailor | Custom Tailoring</title>
+
+    <!-- SEO & Meta Tags -->
+    <meta name="description"
+        content="Rakib Tailor offers bespoke luxury suits, traditional wear, and expert alterations with over two decades of uncompromising dedication to craftsmanship.">
+    <meta name="keywords"
+        content="custom tailor, bespoke suits, traditional wear, alterations, luxury tailoring, Rakib Tailor">
+    <meta name="author" content="Rakib Tailor">
+    <meta property="og:title" content="Rakib Tailor | Luxury Custom Tailoring">
+    <meta property="og:description"
+        content="Crafting bespoke suits and traditional wear for those who appreciate the finer details in life.">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon (Fallback to text icon if image missing) -->
+    <link rel="icon" href="images/favicon.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Jost for Headings, Inter for Body, Ibarra Real Nova for Italic Accents -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500&family=Jost:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="luxury-redesign.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+    <!-- Cinematic Film Grain Overlay -->
+    <div class="film-grain"></div>
+
+    <!-- Artisanal Header -->
+    <header id="header" class="minimal-hud">
+        <a href="#" class="hud-logo">RAKIB</a>
+        <div class="hud-right">
+            <button class="menu-toggle" aria-label="Open Menu" id="menuToggleBtn">
+                <span class="hb-line"></span>
+                <span class="hb-line"></span>
+                <span class="hb-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Full-Screen Artistic Menu -->
+    <div id="art-menu" class="overlay-full">
+        <div class="overlay-close" id="menuCloseBtn"><i class="fas fa-times"></i></div>
+        <nav class="art-nav">
+            <div class="nav-bg-text">RAKIB</div>
+            <ul class="art-links">
+                <li><a href="#home" data-text="01 HOME">01 HOME</a></li>
+                <li><a href="#couture" data-text="02 COUTURE">02 COUTURE</a></li>
+                <li><a href="#process" data-text="03 PROCESS">03 PROCESS</a></li>
+                <li><a href="#gallery" data-text="04 LOOKBOOK">04 LOOKBOOK</a></li>
+                <li><a href="#contact" data-text="05 CONTACT">05 CONTACT</a></li>
+            </ul>
+            <div class="art-menu-footer">
+                <span>Rakib Tailor &mdash; Est. 2002</span>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Cinematic Split Hero -->
+    <section id="home" class="split-hero">
+        <div class="sh-left">
+            <div class="sh-eyebrow">Est. 2002 &mdash; New York</div>
+            <h1 class="sh-heading">
+                <span class="sh-line">BESPOKE</span>
+                <span class="sh-line sh-italic"><em>Heritage</em></span>
+                <span class="sh-line">ATELIER</span>
+            </h1>
+            <div class="sh-cta-row">
+                <a href="#contact" class="sh-btn-primary">BOOK FITTING</a>
+                <a href="#couture" class="sh-btn-ghost">View Collections</a>
+            </div>
+        </div>
+        <div class="sh-right">
+            <div class="sh-img-frame fade-up">
+                <img src="images/bespoke-suit-promo.png" alt="Bespoke Heritage Suit">
+                <div class="sh-img-tag">Handcrafted &bull; Since 2002</div>
+            </div>
+        </div>
+        <div class="sh-scroll-hint">
+            <span class="scroll-line"></span>
+            <span class="scroll-text">SCROLL</span>
+        </div>
+    </section>
+
+    <!-- Scrolling Marquee -->
+    <div class="marquee-section">
+        <div class="marquee-content">
+            <span>UNCOMPROMISED QUALITY</span>
+            <span class="bullet">•</span>
+            <span class="accent-italic">BESPOKE TAILORING</span>
+            <span class="bullet">•</span>
+            <span>MASTER CRAFTSMANSHIP</span>
+            <span class="bullet">•</span>
+            <span class="accent-italic">LUXURY FABRICS</span>
+            <span class="bullet">•</span>
+            <span>UNCOMPROMISED QUALITY</span>
+            <span class="bullet">•</span>
+            <span class="accent-italic">BESPOKE TAILORING</span>
+            <span class="bullet">•</span>
+            <span>MASTER CRAFTSMANSHIP</span>
+            <span class="bullet">•</span>
+            <span class="accent-italic">LUXURY FABRICS</span>
+            <span class="bullet">•</span>
+        </div>
+    </div>
+
+    <!-- The Atelier Intro -->
+    <section id="experience" class="section atelier-intro-section">
+        <div class="container">
+            <div class="ai-layout">
+                <div class="ai-left fade-up">
+                    <div class="ai-eyebrow">Est. 2002</div>
+                    <h2 class="ai-heading">The <em>Atelier</em></h2>
+                    <div class="ai-image-block">
+                        <img src="images/bespoke-stitching.png" alt="Master Tailor at Work">
+                        <div class="ai-img-caption">Hand-drawn patterns since 2002</div>
+                    </div>
+                </div>
+                <div class="ai-right fade-up" style="transition-delay:0.2s">
+                    <div class="ai-big-number">24<small>yrs</small></div>
+                    <p class="ai-lead">Every pattern we create is a unique anatomical map, hand-drawn on cardstock
+                        before a single cut is made.</p>
+                    <p class="ai-body">This is the difference between custom and true bespoke — our ateliers combine
+                        centuries-old technique with obsessive modern precision.</p>
+                    <a href="#contact" class="btn btn-outline dark">BOOK A CONSULTATION</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Couture Numbers Panel -->
+    <section class="section couture-numbers-section">
+        <div class="container">
+            <div class="cn-grid">
+                <div class="cn-item fade-up">
+                    <div class="cn-value">99<span>%</span></div>
+                    <div class="cn-label">Precision Fit</div>
+                    <div class="cn-bar">
+                        <div class="cn-bar-fill" style="width:99%"></div>
+                    </div>
+                    <div class="cn-desc">Anatomical Accuracy</div>
+                </div>
+                <div class="cn-item fade-up" style="transition-delay:0.12s">
+                    <div class="cn-value">95<span>%</span></div>
+                    <div class="cn-label">Hand Stitch</div>
+                    <div class="cn-bar">
+                        <div class="cn-bar-fill" style="width:95%"></div>
+                    </div>
+                    <div class="cn-desc">Artisanal Finishing</div>
+                </div>
+                <div class="cn-item cn-item--highlight fade-up" style="transition-delay:0.24s">
+                    <div class="cn-value">SS</div>
+                    <div class="cn-label">Fabric Grade</div>
+                    <div class="cn-bar">
+                        <div class="cn-bar-fill" style="width:100%"></div>
+                    </div>
+                    <div class="cn-desc">World Class Mills</div>
+                </div>
+                <div class="cn-tagline fade-up" style="transition-delay:0.36s">
+                    <blockquote>&ldquo;Numbers don&rsquo;t lie &mdash; our craft does the talking.&rdquo;</blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections — Numbered Editorial Cards -->
+    <section id="couture" class="section editorial-cards-section">
+        <div class="container">
+            <div class="ec-intro fade-up">
+                <div class="section-top-label">Our Collections</div>
+                <h2>The Three <em>Pillars</em></h2>
+            </div>
+            <div class="ec-list">
+                <div class="ec-card reveal-fade">
+                    <div class="ec-card-img">
+                        <img src="images/bespoke-suit-promo.png" alt="Bespoke Suits">
+                    </div>
+                    <div class="ec-card-body">
+                        <div class="ec-num">01</div>
+                        <div class="ec-info">
+                            <span class="ec-tag">THE MASTERPIECE</span>
+                            <h3>Bespoke Suits</h3>
+                            <p>Each suit begins with a hand-drawn pattern — an anatomical map unique to you. Hand-cut,
+                                hand-stitched, hand-finished over 45+ hours of artisanal work.</p>
+                        </div>
+                        <a href="#contact" class="ec-link"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="ec-card reveal-fade" style="transition-delay:0.15s">
+                    <div class="ec-card-img">
+                        <img src="images/accessories-promo.png" alt="Fine Accessories">
+                    </div>
+                    <div class="ec-card-body">
+                        <div class="ec-num">02</div>
+                        <div class="ec-info">
+                            <span class="ec-tag">THE DETAIL</span>
+                            <h3>Accessories</h3>
+                            <p>From hand-rolled pocket squares to bespoke leather goods — the finest finishing details
+                                that define the truly dressed man.</p>
+                        </div>
+                        <a href="#contact" class="ec-link"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="ec-card reveal-fade" style="transition-delay:0.3s">
+                    <div class="ec-card-img">
+                        <img src="images/wedding-suit-promo.png" alt="Wedding Couture">
+                    </div>
+                    <div class="ec-card-body">
+                        <div class="ec-num">03</div>
+                        <div class="ec-info">
+                            <span class="ec-tag">THE OCCASION</span>
+                            <h3>Wedding Couture</h3>
+                            <p>Your most important day deserves the most perfect garment. We create ceremonial suits and
+                                tuxedos in the purest tailoring tradition.</p>
+                        </div>
+                        <a href="#contact" class="ec-link"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horizontal Horizontal Process Scroll -->
+    <section id="process" class="horizontal-scroll-section">
+        <div class="horizontal-sticky">
+            <div class="horizontal-wrapper">
+                <div class="horizontal-item bg-dark text-light">
+                    <div class="h-content">
+                        <span class="h-index">01</span>
+                        <h2>The Consultation</h2>
+                        <p>A deep dive into your personal style, selecting from thousands of world-class fabrics.</p>
+                    </div>
+                </div>
+                <div class="horizontal-item bg-off-white">
+                    <div class="h-content">
+                        <span class="h-index">02</span>
+                        <h2>The Measurement</h2>
+                        <p>Over 30 precise anatomical measurements taken to ensure a flawless silhouette.</p>
+                    </div>
+                </div>
+                <div class="horizontal-item bg-dark text-light">
+                    <div class="h-content">
+                        <span class="h-index">03</span>
+                        <h2>The Drafting</h2>
+                        <p>Your unique pattern is hand-drawn on cardstock before the first cut is made.</p>
+                    </div>
+                </div>
+                <div class="horizontal-item bg-off-white">
+                    <div class="h-content">
+                        <span class="h-index">04</span>
+                        <h2>The Final Fitting</h2>
+                        <p>Artisanal adjustments made until the garment feels like a second skin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heritage Section -->
+    <section id="heritage" class="section heritage-section">
+        <div class="container">
+            <div class="hs-grid">
+                <div class="hs-visual fade-up">
+                    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1200&auto=format&fit=crop"
+                        alt="Heritage Craft">
+                    <div class="hs-year-badge">1998</div>
+                </div>
+                <div class="hs-content fade-up" style="transition-delay:0.2s">
+                    <div class="section-top-label">Since 1998</div>
+                    <h2>A Legacy <br>of <em>Perfection</em></h2>
+                    <p>With over two decades of uncompromising dedication, we stand as a symbol of precision. Every
+                        garment we create is a masterpiece of design and comfort.</p>
+                    <div class="hs-pillars">
+                        <div class="hs-pillar">
+                            <span class="hs-pillar-num">25+</span>
+                            <span class="hs-pillar-label">Years of Mastery</span>
+                        </div>
+                        <div class="hs-pillar">
+                            <span class="hs-pillar-num">2K+</span>
+                            <span class="hs-pillar-label">Garments Created</span>
+                        </div>
+                        <div class="hs-pillar">
+                            <span class="hs-pillar-num">100%</span>
+                            <span class="hs-pillar-label">Hand-crafted</span>
+                        </div>
+                    </div>
+                    <ul class="check-list-artisanal">
+                        <li>Master Craftsmanship</li>
+                        <li>Hand-stitched Details</li>
+                        <li>Premium Italian Fabrics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Editorial FAQ Section -->
+    <section class="section artisanal-faq-section">
+        <div class="container">
+            <div class="faq-editorial-grid">
+                <div class="faq-e-header">
+                    <div class="section-top-label">Common Queries</div>
+                    <h2>Questions <br><span class="accent-italic">& Answers</span></h2>
+                </div>
+                <div class="faq-e-list">
+                    <div class="faq-e-item active">
+                        <div class="faq-e-question">
+                            <span>01</span>
+                            <h3>How long does a bespoke suit take?</h3>
+                            <i class="fas fa-plus faq-icon"></i>
+                        </div>
+                        <div class="faq-e-answer">Normally between 4 to 6 weeks, depending on the complexity and fabric
+                            choice. Our master tailors dedicate over 45 hours of handwork to each commission.</div>
+                    </div>
+                    <div class="faq-e-item">
+                        <div class="faq-e-question">
+                            <span>02</span>
+                            <h3>Do you offer home consultations?</h3>
+                            <i class="fas fa-plus faq-icon"></i>
+                        </div>
+                        <div class="faq-e-answer">Yes, we provide exclusive home and office consultations for our
+                            premium clientele. Travel within a 30-mile radius is complimentary.</div>
+                    </div>
+                    <div class="faq-e-item">
+                        <div class="faq-e-question">
+                            <span>03</span>
+                            <h3>What fabrics do you work with?</h3>
+                            <i class="fas fa-plus faq-icon"></i>
+                        </div>
+                        <div class="faq-e-answer">Exclusively world-class mills: Loro Piana, Vitale Barberis Canonico,
+                            Holland & Sherry. Every fabric is selected for its provenance, weight, and tactile quality.
+                        </div>
+                    </div>
+                    <div class="faq-e-item">
+                        <div class="faq-e-question">
+                            <span>04</span>
+                            <h3>What is your fitting process?</h3>
+                            <i class="fas fa-plus faq-icon"></i>
+                        </div>
+                        <div class="faq-e-answer">We schedule a minimum of two fittings — a basted fitting and a forward
+                            fitting — before the final delivery to ensure an anatomically perfect garment.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Editorial Price Spread -->
+    <section id="services" class="section editorial-pricing-section">
+        <div class="container">
+            <div class="pricing-spread">
+                <!-- Item 1 -->
+                <div class="pricing-item fade-up">
+                    <div class="p-header">
+                        <h3>Bespoke Suits</h3>
+                        <div class="p-line"></div>
+                        <span class="p-price">From $850</span>
+                    </div>
+                    <p class="p-meta">Fully customized • 45+ Hours of Handwork</p>
+                </div>
+                <!-- Item 2 -->
+                <div class="pricing-item fade-up" style="transition-delay: 0.1s;">
+                    <div class="p-header">
+                        <h3>Traditional Wear</h3>
+                        <div class="p-line"></div>
+                        <span class="p-price">From $450</span>
+                    </div>
+                    <p class="p-meta">Cultural Excellence • Hand-Embroidery</p>
+                </div>
+                <!-- Item 3 -->
+                <div class="pricing-item fade-up" style="transition-delay: 0.2s;">
+                    <div class="p-header">
+                        <h3>Bridal & Evening</h3>
+                        <div class="p-line"></div>
+                        <span class="p-price">Custom</span>
+                    </div>
+                    <p class="p-meta">Exquisite Fitting • Luxury Evening Gowns</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The People — Staggered Bios -->
+    <section id="team" class="bios-section">
+        <div class="container">
+            <div class="bios-header fade-up">
+                <div class="section-top-label">The People</div>
+                <h2>Behind the <em>Stitch</em></h2>
+            </div>
+            <div class="bios-grid">
+                <div class="bio-card fade-up">
+                    <div class="bio-photo">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop"
+                            alt="Julian Vancery">
+                        <div class="bio-badge">01</div>
+                    </div>
+                    <div class="bio-text">
+                        <div class="bio-role">MODELIST</div>
+                        <h3 class="bio-name">Julian Vancery</h3>
+                        <p class="bio-desc">Pattern master with 15 years of haute couture experience across London and
+                            Milan.</p>
+                    </div>
+                </div>
+                <div class="bio-card bio-card--offset fade-up" style="transition-delay:0.2s">
+                    <div class="bio-photo">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=600&auto=format&fit=crop"
+                            alt="Elena Ross">
+                        <div class="bio-badge">02</div>
+                    </div>
+                    <div class="bio-text">
+                        <div class="bio-role">ART DIRECTOR</div>
+                        <h3 class="bio-name">Elena Ross</h3>
+                        <p class="bio-desc">Visual soul of the atelier. Trained under Jean-Paul Gaultier&rsquo;s team in
+                            Paris.</p>
+                    </div>
+                </div>
+                <div class="bio-card fade-up" style="transition-delay:0.4s">
+                    <div class="bio-photo">
+                        <img src="images/master-tailor.png" alt="Rakib Ahmed">
+                        <div class="bio-badge">03</div>
+                    </div>
+                    <div class="bio-text">
+                        <div class="bio-role">MASTER TAILOR</div>
+                        <h3 class="bio-name">Rakib Ahmed</h3>
+                        <p class="bio-desc">Founder. 25 years of hand stitching perfected across three continents.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Voice — Star Cards -->
+    <section id="testimonials" class="star-voice-section">
+        <div class="container">
+            <div class="sv-header fade-up">
+                <div class="section-top-label">Client Voice</div>
+                <h2>What they <em>say</em></h2>
+            </div>
+            <div class="sv-cards">
+                <div class="sv-card fade-up">
+                    <div class="sv-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="sv-text">&ldquo;The most perfectly tailored suit I have ever owned. The attention to
+                        detail is simply unmatched &mdash; every line falls exactly as it should.&rdquo;</p>
+                    <div class="sv-author">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop"
+                            alt="James Harrington">
+                        <div>
+                            <strong>James Harrington</strong>
+                            <span>London, UK &mdash; Bespoke Suit</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sv-card sv-card--featured fade-up" style="transition-delay:0.15s">
+                    <div class="sv-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="sv-text">&ldquo;Rakib&rsquo;s team transformed my vintage wedding gown with such precision
+                        and care. It was as if they understood the garment&rsquo;s very soul.&rdquo;</p>
+                    <div class="sv-author">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop"
+                            alt="Eleanor Vance">
+                        <div>
+                            <strong>Eleanor Vance</strong>
+                            <span>New York, US &mdash; Bridal Couture</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sv-card fade-up" style="transition-delay:0.3s">
+                    <div class="sv-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="sv-text">&ldquo;A truly extraordinary experience. From fabric selection to the final
+                        fitting, everything was world-class. I will return for every occasion.&rdquo;</p>
+                    <div class="sv-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
+                            alt="Marcus Webb">
+                        <div>
+                            <strong>Marcus Webb</strong>
+                            <span>Paris, FR &mdash; Traditional Wear</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Luxury Lookbook Gallery (Redesigned) -->
+    <section id="gallery" class="section luxury-lookbook">
+        <div class="container-wide">
+            <div class="lookbook-header fade-up">
+                <div class="section-top-label">The Archive</div>
+                <h2 class="lookbook-title">Selected <em>Works</em></h2>
+                <p class="lookbook-intro">A curated sequence of our most significant commissions, captured in our
+                    atelier's natural light.</p>
+            </div>
+
+            <div class="lookbook-grid">
+                <!-- Large Feature -->
+                <div class="lb-item lb-item--large reveal-fade">
+                    <div class="lb-image">
+                        <img src="https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?q=80&w=1600&auto=format&fit=crop"
+                            alt="The Noir Collection">
+                        <div class="lb-overlay">
+                            <span class="lb-number">01</span>
+                            <h3>The Noir Collection</h3>
+                            <a href="#contact" class="lb-link">View Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tall Portrait -->
+                <div class="lb-item lb-item--tall reveal-fade" style="transition-delay: 0.1s;">
+                    <div class="lb-image">
+                        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1000&auto=format&fit=crop"
+                            alt="Artisanal Detail">
+                        <div class="lb-overlay">
+                            <span class="lb-number">02</span>
+                            <h3>The Master's Touch</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Square Accent -->
+                <div class="lb-item lb-item--square reveal-fade" style="transition-delay: 0.2s;">
+                    <div class="lb-image">
+                        <img src="https://images.unsplash.com/photo-1594938328870-9623159c8c99?q=80&w=900&auto=format&fit=crop"
+                            alt="Fabric Provenance">
+                        <div class="lb-overlay">
+                            <span class="lb-number">03</span>
+                            <h3>Rare Provinence</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature Right -->
+                <div class="lb-item lb-item--feature-right reveal-fade" style="transition-delay: 0.3s;">
+                    <div class="lb-image">
+                        <img src="https://images.unsplash.com/photo-1605518216938-7c31b7b14ad0?q=80&w=1200&auto=format&fit=crop"
+                            alt="Morning Fitting">
+                        <div class="lb-overlay">
+                            <span class="lb-number">04</span>
+                            <h3>The Morning Fitting</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Atmospheric Contact & Location (Redesigned) -->
+    <section id="contact" class="atelier-contact-location">
+        <div class="contact-split">
+            <!-- Left: Atmospheric Image -->
+            <div class="contact-visual reveal-fade">
+                <img src="images/bespoke-suit-promo.png" alt="In the Atelier" class="parallax-img">
+                <div class="visual-accent">Est. 2002</div>
+            </div>
+
+            <!-- Right: Elegant Form -->
+            <div class="contact-form-panel fade-up">
+                <div class="form-inner">
+                    <div class="section-top-label">Inquiry</div>
+                    <h2 class="form-title">Start Your <br><em>Bespoke Journey</em></h2>
+                    <p class="form-subtitle">Commission a garment that belongs exclusively to you.</p>
+
+                    <form class="bespoke-form">
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label>Name</label>
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-field">
+                                <label>Email</label>
+                                <input type="email" placeholder="example@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <label>Service interested in</label>
+                            <select>
+                                <option>Bespoke Suiting</option>
+                                <option>Ceremonial Weaving</option>
+                                <option>Expert Alterations</option>
+                                <option>Masterclass Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label>Vision</label>
+                            <textarea rows="4" placeholder="How can we assist you?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline dark full-width">SEND COMMISSION INQUIRY</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Integrated Location & Map -->
+        <div id="location" class="location-integrationContainer">
+            <div class="location-details reveal-fade">
+                <div class="loc-grid">
+                    <div class="loc-col">
+                        <h4>Maison</h4>
+                        <p>SCO 42, Sector 17-C<br>Chandigarh, 160017</p>
+                    </div>
+                    <div class="loc-col">
+                        <h4>Atelier Hours</h4>
+                        <p>Mon – Fri: 09:00 – 18:00<br>Sat: By Appointment Only</p>
+                    </div>
+                    <div class="loc-col">
+                        <h4>Connect</h4>
+                        <p>+91 98765 43210<br>appointments@rakibtailor.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="location-map tint-map">
+                <iframe
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=76.74500%2C30.72500%2C76.81500%2C30.77500&amp;layer=mapnik&amp;marker=30.74880%2C76.77950"
+                    loading="lazy" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bespoke Signature Footer -->
+    <footer class="signature-footer">
+        <div class="sig-footer-top">
+            <div class="sig-bg-text">RAKIB</div>
+            <div class="container">
+                <div class="sig-footer-grid">
+                    <div class="sig-brand">
+                        <a href="#" class="logo text-light">RAKIB <br><span class="accent-italic">Tailor</span></a>
+                        <p>Crafting perfection, one stitch at a time.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                    <div class="sig-divider"></div>
+                    <div class="sig-links">
+                        <h4>Navigate</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#experience">The Atelier</a></li>
+                            <li><a href="#couture">Collections</a></li>
+                            <li><a href="#gallery">Lookbook</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="sig-links">
+                        <h4>Information</h4>
+                        <ul>
+                            <li><a href="mailto:appointments@rakibtailor.com">appointments@rakibtailor.com</a></li>
+                            <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+                            <li>SCO 42, Sector 17-C, Chandigarh</li>
+                            <li>Mon – Sat: 09:00 – 18:00</li>
+                        </ul>
+                    </div>
+                    <div class="sig-newsletter">
+                        <h4>Join the Atelier</h4>
+                        <p>Bespoke updates & seasonal news.</p>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Your Email">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sig-footer-bottom">
+            <div class="container">
+                <p>&copy; <span id="year"></span> Rakib Tailor &mdash; Masterfully Crafted.</p>
+                <p class="sig-footer-tagline">Est. 2002 &bull; New York</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top btn-outline" aria-label="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Full-Screen Search Overlay -->
+    <div id="search-overlay" class="overlay-full">
+        <div class="overlay-close"><i class="fas fa-times"></i></div>
+        <div class="search-input-wrapper">
+            <input type="text" placeholder="START TYPING..." autofocus>
+        </div>
+    </div>
+
+    <!-- Full-Screen Info Overlay -->
+    <div id="info-overlay" class="overlay-full">
+        <div class="overlay-close"><i class="fas fa-times"></i></div>
+        <div class="info-overlay-content">
+            <div class="section-top-label">RAKIB TAILOR</div>
+            <h2 class="reveal-text">Bespoke Heritage</h2>
+            <p>Crafting excellence since 2002. Our atelier is dedicated to the traditional art of tailoring, where
+                every
+                garment is a unique masterpiece designed for the individual.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
